@@ -99,7 +99,7 @@ const Index = () => {
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {featuredImages.map((item, i) => (
               <ScrollReveal key={i} delay={i * 0.1}>
-                <div className="image-hover-zoom rounded-xl relative group cursor-pointer">
+                {/* <div className="image-hover-zoom rounded-xl relative group cursor-pointer">
                   <img
                     src={item.src}
                     alt={item.caption}
@@ -107,6 +107,25 @@ const Index = () => {
                     loading="lazy"
                   />
                   <div className="absolute inset-0 bg-deep-blue/0 bg-deep-blue/50 transition-all duration-500 rounded-xl flex items-end">
+                    <p className="font-body text-sm text-primary-foreground p-4 opacity-100 transition-opacity duration-300 font-bold">
+                      {item.caption} <span className="ml-2">{item.emoji}</span>
+                    </p>
+                  </div>
+                </div> */}
+                <div className="image-hover-zoom rounded-xl relative group cursor-pointer">
+                  <img
+                    src={item.src}
+                    alt={item.caption}
+                    className="w-full h-72 object-cover rounded-xl transition-transform duration-500 group-hover:scale-105 border-4 border-primary/50"
+                    loading="lazy"
+                  />
+                  <div
+                    className="absolute inset-0 rounded-xl flex items-end"
+                    style={{
+                      background:
+                        'linear-gradient(to top, rgba(11, 22, 33, 0.9) 0%, rgba(11, 22, 33, 0) 90%)',
+                    }}
+                  >
                     <p className="font-body text-sm text-primary-foreground p-4 opacity-100 transition-opacity duration-300 font-bold">
                       {item.caption} <span className="ml-2">{item.emoji}</span>
                     </p>

@@ -18,6 +18,8 @@ export default {
         body: ['DM Sans', 'system-ui', 'sans-serif'],
       },
       colors: {
+        'gold-button-start': '#FFD700', // Example: Define your gold button colors
+        'gold-button-end': '#DAA520',
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -92,12 +94,17 @@ export default {
           "0%": { opacity: "0", transform: "translateY(10px)" },
           "100%": { opacity: "1", transform: "translateY(0)" },
         },
+         gradientXY: {
+          '0%, 100%': { backgroundPosition: 'left top' },
+          '50%': { backgroundPosition: 'right bottom' },
+        }
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "fade-up": "fade-up 0.8s ease-out forwards",
         "counter": "counter 0.5s ease-out forwards",
+        "gradient-xy": "gradientXY 15s ease infinite",
       },
     },
   },

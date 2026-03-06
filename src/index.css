@@ -163,3 +163,22 @@
 html {
   scroll-behavior: smooth;
 }
+
+.gold-button {
+  background-image: linear-gradient(to right, #FFD700 0%, #DAA520 100%); /* Gold gradient */
+  color: #1a1a1a; /* Dark text on gold */
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.gold-button:hover {
+  background-position: right center; /* Subtle shift on hover for the gradient */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Add these to your global CSS if you want the animated background */
+.animate-gradient-xy {
+  background: linear-gradient(-45deg, #1f2f4a, #0b1621, #2c3e50, #1a2a3a); /* Dark, rich gradient colors */
+  background-size: 400% 400%;
+}
