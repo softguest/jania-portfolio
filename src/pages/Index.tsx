@@ -14,10 +14,10 @@ import PremiumHeroBackground from "@/components/PremiumHeroBackground";
 import ImpactGlobe from "@/components/ImpactGlobe";
 
 const featuredImages = [
-  { src: speakingHeroImg, caption: "Global Keynote Address" },
-  { src: youthForumImg, caption: "Youth Forum Leadership" },
-  { src: awardImg, caption: "Award Recognition" },
-  { src: policyImg, caption: "Policy Panel Discussion" },
+  { src: speakingHeroImg, caption: "Global Keynote Address", emoji: "🌐" },
+  { src: youthForumImg, caption: "Youth Forum Leadership", emoji: "👏" },
+  { src: awardImg, caption: "Award Recognition", emoji: "🏆" },
+  { src: policyImg, caption: "Policy Panel Discussion", emoji: "💬" },
 ];
 
 const initiatives = [
@@ -37,11 +37,8 @@ const Index = () => {
       {/* HERO */}
       <section className="relative min-h-screen flex items-center floating-gradient overflow-hidden">
         {/* <img src={speakingHeroImg} alt="Jania speaking at major conference" className="absolute inset-0 w-full h-full object-cover" /> */}
-         {/* 3D Background */}
-        {/* <PremiumHeroBackground />  */}
 
         {/* Impact Globe */}
-        {/* <ImpactGlobe />  */}
 
         {/* Light Rays */}
         <div className="absolute inset-0 pointer-events-none">
@@ -79,7 +76,7 @@ const Index = () => {
                 <img
                   src={heroImg}
                   alt="Jania Ney Yosimbom speaking at an international conference"
-                  className="w-full h-[500px] lg:h-[600px] object-cover"
+                  className="w-full h-[500px] lg:h-[600px] object-cover border-4 border-primary rounded-2xl transition-transform duration-500 hover:scale-105"
                   loading="eager"
                 />
               </div>
@@ -106,12 +103,12 @@ const Index = () => {
                   <img
                     src={item.src}
                     alt={item.caption}
-                    className="w-full h-72 object-cover rounded-xl"
+                    className="w-full h-72 object-cover rounded-xl transition-transform duration-500 group-hover:scale-105"
                     loading="lazy"
                   />
-                  <div className="absolute inset-0 bg-deep-blue/0 group-hover:bg-deep-blue/50 transition-all duration-500 rounded-xl flex items-end">
-                    <p className="font-body text-sm text-primary-foreground p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-medium">
-                      {item.caption}
+                  <div className="absolute inset-0 bg-deep-blue/0 bg-deep-blue/50 transition-all duration-500 rounded-xl flex items-end">
+                    <p className="font-body text-sm text-primary-foreground p-4 opacity-100 transition-opacity duration-300 font-bold">
+                      {item.caption} <span className="ml-2">{item.emoji}</span>
                     </p>
                   </div>
                 </div>
