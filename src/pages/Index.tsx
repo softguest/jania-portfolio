@@ -38,10 +38,10 @@ const Index = () => {
       <section className="relative min-h-screen flex items-center floating-gradient overflow-hidden">
         {/* <img src={speakingHeroImg} alt="Jania speaking at major conference" className="absolute inset-0 w-full h-full object-cover" /> */}
          {/* 3D Background */}
-        <PremiumHeroBackground />
+        {/* <PremiumHeroBackground />  */}
 
         {/* Impact Globe */}
-        <ImpactGlobe />
+        {/* <ImpactGlobe />  */}
 
         {/* Light Rays */}
         <div className="absolute inset-0 pointer-events-none">
