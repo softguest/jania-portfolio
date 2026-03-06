@@ -103,7 +103,7 @@ const Index = () => {
                   <img
                     src={item.src}
                     alt={item.caption}
-                    className="w-full h-72 object-cover rounded-xl transition-transform duration-500 group-hover:scale-105"
+                    className="w-full h-72 object-cover rounded-xl transition-transform duration-500 group-hover:scale-105 border-4 border-accent/50"
                     loading="lazy"
                   />
                   <div className="absolute inset-0 bg-deep-blue/0 bg-deep-blue/50 transition-all duration-500 rounded-xl flex items-end">
