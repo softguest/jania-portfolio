@@ -45,16 +45,14 @@ const About = () => {
       <section className="relative h-[70vh] overflow-hidden flex items-center justify-center">
         <img src={speakingHeroImg} alt="Jania speaking at major conference" className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0 bg-deep-blue/60" />
-        <div className="relative z-10 text-center px-6">
+        <div className="relative z-10 text-center justify-center items-center px-6">
           <ScrollReveal>
-            <div className="gold-divider mb-6" />
+            <div className="gold-divider justify-center mb-6" />
             <h1 className="editorial-heading text-white mb-6">The Story Behind the <span className="italic text-primary">Movement</span></h1>
-            <p className="body-text  text-white max-w-2xl mb-6">
-              Jania Ney Yosimbom is not just a leader — she is a movement builder. A multi-award-winning advocate, global speaker, and the visionary founder of EcoHub and Girl Charge, Jania has dedicated her life to transforming how young people engage with leadership, policy, and purpose.
+            <p className="body-text text-white mb-6">
+              Jania Ney Yosimbom is not just a leader — she is a movement builder. A multi-award-winning advocate,<br/> global speaker, and the visionary founder of EcoHub and Girl Charge, Jania has dedicated her life to transforming<br/> how young people engage with leadership, policy, and purpose.
             </p>
-            <p className="body-text flex justify-center text-white max-w-2xl mb-6">
-              Her journey from community activist to international policy expert is a testament to the power of faith, resilience, and an unshakable belief that every young person carries the potential to change the world.
-            </p>
+            
           </ScrollReveal>
         </div>
       </section>
@@ -66,6 +64,9 @@ const About = () => {
             <div className="text-center mb-20">
               <div className="gold-divider mx-auto mb-6" />
               <h2 className="editorial-subheading">A Journey of Impact</h2>
+              <p className="body-text my-6 ">
+                Her journey from community activist to international policy expert is a testament to the power of faith, resilience, and an unshakable belief that every young person carries the potential to change the world.
+              </p>
             </div>
           </ScrollReveal>
           <div className="space-y-20">

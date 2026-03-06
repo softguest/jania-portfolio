@@ -39,12 +39,12 @@ const Contact = () => {
                 <h3 className="font-heading text-xl font-semibold text-deep-blue mb-4">Get in Touch</h3>
                 <div className="space-y-3">
                   <a href="mailto:hello@janiayosimbom.com" className="flex items-center gap-3 font-body text-sm text-muted-foreground hover:text-primary transition-colors">
-                    <Mail size={18} className="text-primary" /> hello@janiayosimbom.com
+                    <Mail size={18} className="text-primary" /> yosimbomj@gmail.com
                   </a>
-                  <a href="https://wa.me/1234567890" className="flex items-center gap-3 font-body text-sm text-muted-foreground hover:text-primary transition-colors">
+                  <a href="https://wa.me/237679443906" className="flex items-center gap-3 font-body text-sm text-muted-foreground hover:text-primary transition-colors">
                     <MessageCircle size={18} className="text-primary" /> WhatsApp
                   </a>
-                  <a href="tel:+1234567890" className="flex items-center gap-3 font-body text-sm text-muted-foreground hover:text-primary transition-colors">
+                  <a href="tel:+237679443906" className="flex items-center gap-3 font-body text-sm text-muted-foreground hover:text-primary transition-colors">
                     <Phone size={18} className="text-primary" /> Schedule a Call
                   </a>
                 </div>
